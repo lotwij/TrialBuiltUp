@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:alpha="0.3"/>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:text="Welcome"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="88dp"
+
+                android:layout_height="wrap_content" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="Welcome and thank you so much for getting 'Meal Prep Recipes!'. Please login or register so we can show you all the great recipes!"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:hint="Username"
+
+                android:layout_marginTop="30dp"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:layout_height="40dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                android:layout_height="40dp"/>
+
+        <Button
+                android:id="@+id/Button1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_height="40dp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+            <Button
+                    android:id="@+id/GoToForgotPassword_btn"
+                    android:layout_width="0dp"
+                    android:text="Forgot Password"
+                    android:textSize="10dp"
+                    android:gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+            <Button
+                    android:id="@+id/GoToRegister_btn"
+                    android:layout_width="0dp"
+                    android:textSize="10dp"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="left"
+                    android:text="Register"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
